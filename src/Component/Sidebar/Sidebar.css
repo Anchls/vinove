@@ -1,0 +1,89 @@
+/* Hamburger button */
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #4e00e1;
+    color: white;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #4e00e1;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: left 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 99;
+  }
+  
+  /* Sidebar open/close logic */
+  .sidebar.open {
+    left: 0;
+  }
+  
+  .sidebar.closed {
+    left: -250px;
+  }
+  
+  .user-info {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .user-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px 0;
+  }
+  
+  .user-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .user-email {
+    font-size: 14px;
+    color: #cccccc;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    padding: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .menu li:hover {
+    background-color: #3700b3;
+  }
+  
+  .menu li.active {
+    background-color: #6200ea;
+  }
+  
+  .footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer li {
+    padding: 15px;
+  }
+  
